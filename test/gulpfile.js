@@ -4,7 +4,10 @@ var gulp = require('gulp');
 
 function modifier(link) {
   "use strict";
-  return '/appended-path/' + link;
+  if (link && !/^((http|https|ftp|rtsp|mms):)?\/\//.test(link)) {
+    return '/appended-path' + link;
+  }
+  return link;
 }
 
 gulp.task('default', function () {

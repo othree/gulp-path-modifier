@@ -9,9 +9,7 @@ function modify(elem, attr, modifier) {
   "use strict";
 
   var val = elem.attr(attr);
-  if (val && !/^((http|https|ftp|rtsp|mms):)?\/\//.test(val)) {
-    elem.attr(attr, modifier(val));
-  }
+  if (val) { elem.attr(attr, modifier(val)); }
 }
 
 module.exports = function (query, modifier) {

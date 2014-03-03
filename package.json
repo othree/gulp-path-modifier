@@ -1,7 +1,7 @@
 {
-    "name": "gulp-relative-path-modifier",
-    "homepage": "https://github.com/othree/gulp-relative-path-modifier",
-    "repository": "https://github.com/othree/gulp-relative-path-modifier.git",
+    "name": "gulp-path-modifier",
+    "homepage": "https://github.com/othree/gulp-path-modifier",
+    "repository": "https://github.com/othree/gulp-path-modifier.git",
     "author": "othree (https://github.com/othree)",
     "main": "./index.js",
     "keywords": [
