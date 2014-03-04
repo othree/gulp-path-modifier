@@ -5,11 +5,11 @@ var Buffer = require('buffer').Buffer;
 
 var cheerio = require('cheerio');
 
-function modify(elem, attr, modifier) {
+function modify(file, elem, attr, modifier) {
   "use strict";
 
   var val = elem.attr(attr);
-  if (val) { elem.attr(attr, modifier(val)); }
+  if (val) { elem.attr(attr, modifier(val, file)); }
 }
 
 module.exports = function (query, modifier) {
@@ -24,8 +24,8 @@ module.exports = function (query, modifier) {
 
     $(query).each(function () {
       var elem = $(this);
-      modify(elem, 'href', modifier);
-      modify(elem, 'src', modifier);
+      modify(file, elem, 'href', modifier);
+      modify(file, elem, 'src', modifier);
     });
 
     file.contents = new Buffer($.root().html());
