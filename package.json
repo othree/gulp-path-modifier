@@ -1,5 +1,6 @@
 {
     "name": "gulp-path-modifier",
+    "version": "0.0.1",
     "homepage": "https://github.com/othree/gulp-path-modifier",
     "repository": "https://github.com/othree/gulp-path-modifier.git",
     "author": "othree (https://github.com/othree)",
