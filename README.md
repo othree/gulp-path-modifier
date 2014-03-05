@@ -1,7 +1,8 @@
-USE
----
-
 Modify relative url of selected elements
+
+USAGE
+-----
+
 
     function modifier(link) {
       "use strict";
